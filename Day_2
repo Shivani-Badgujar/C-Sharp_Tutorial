@@ -49,3 +49,87 @@ public class Program
 		}
 	}
 }
+
+
+
+
+ //create a program to check out of 10 numbers which are odd and even
+ 
+ using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		 
+		int [] arr = {1,2,3,4,5,6,7,8,9,10};
+		
+		foreach(var i in arr)
+		{
+			if(i%2==0)
+			{
+			  Console.WriteLine("Even no : ",i);
+			}
+			
+		}
+	}
+}
+
+
+//write a program to reverse a string
+
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		String str = "shivani";
+		    char[] chars = str.ToCharArray();  
+    for (int i = 0, j = str.Length - 1; i < j; i++, j--)
+	{  
+        char c = chars[i];  
+        chars[i] = chars[j];  
+        chars[j] = c;
+		
+    }  
+		for(int i=0; i<chars.Length; i++)
+			
+		{
+		Console.WriteLine(chars[i]);
+		}
+       }  
+    
+		}
+	
+	
+	
+	
+	
+
+//write a program to check whether a string is palindrome or not "MADAM"==>MADAM DAD ==>DAD
+
+
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		 string s,revs="";  
+            s= "madam";
+            for (int i = s.Length-1; i >=0; i--) //String Reverse  
+            {  
+                revs += s[i].ToString();  
+            }  
+            if (revs == s) // Checking whether string is palindrome or not  
+            {  
+                Console.WriteLine("String is Palindrome", s);  
+            }  
+            else  
+            {  
+                Console.WriteLine("String is not Palindrome ", s);  
+            }  
+             
+	}
+}
