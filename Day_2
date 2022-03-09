@@ -1,4 +1,4 @@
-//array
+//array in C#
 
 using System;
 					
@@ -22,6 +22,30 @@ public class Program
 		foreach(var item in NumbersList)
 		{
 		 Console.WriteLine(item);
+		}
+	}
+}
+
+
+// String Manupulation
+
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		 String str="Shivani";
+		
+		for(int i=0;i<str.Length;i++)
+		{
+			Console.WriteLine(str[i]);
+		}
+		 Console.WriteLine("================For-Each========================");
+		
+		foreach(var i in str)
+		{
+		  Console.WriteLine(i);
 		}
 	}
 }
