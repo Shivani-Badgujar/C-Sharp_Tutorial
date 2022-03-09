@@ -1,0 +1,27 @@
+//array
+
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		 int [] Numbers;
+        int [] NumbersList = {1,2,3,4,5};
+        
+        int length = NumbersList.Length;
+        
+		 Console.WriteLine("================For Loop========================");
+        for(int index=0;index<length;index++)
+        {
+            Console.WriteLine(NumbersList[index]);
+        }
+		
+		 Console.WriteLine("================For-Each Loop========================");
+		
+		foreach(var item in NumbersList)
+		{
+		 Console.WriteLine(item);
+		}
+	}
+}
