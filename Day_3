@@ -1,0 +1,23 @@
+// string builder
+
+using System;
+using System.Text;
+
+namespace HelloWorld
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+     string sample = "Hi";
+     sample = sample + "Hello";
+
+    // Console.WriteLine(sample);
+
+     StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.Append("Hi");
+            stringBuilder.Append("Hi Hello");//same memory block will be used for hi+Hi hello
+            Console.WriteLine(stringBuilder);
+    }
+  }
+}
